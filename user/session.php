@@ -1,0 +1,21 @@
+<?php
+if(isset($_SESSION['uname'])){
+    $name=$_SESSION['uname'];
+    $image=$_SESSION['uimage'];
+}
+else
+{
+    $name=null;
+    $image=null;
+}
+
+if(isset($_SESSION['uname1'])){
+    $name1=$_SESSION['uname1'];
+    $image2=$_SESSION['uimage1'];
+}
+else
+{
+    $name1=null;
+    $image2=null;
+}
+?>

@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+:root {
+    --primary: #ffaa00;
+    --secondary: #000000;
+    --light: #dbe0ff;
+    --dark: #1f1f1f;
+    --red:#EB1616;
+    --dred:#31354b;
+}
+.content {
+    background: var(--secondary);
+}
+.bg-secondary
+{
+  background-color: var(--dark) !important;
+}
+.card1
+{
+  border: 3px solid rgb(0, 0, 0);
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px 0px 4px 5px white,0px 0px 4px 7px var(--primary);
+
+}
+.card-title1
+{
+    color: white;
+    text-shadow: 1.5px 1.5px 1px var(--red),-1px -1px 1px var(--red);
+    letter-spacing: 4px;
+}
+b,.card-text1
+{
+    color: white !important;
+    font-family: MVboli;
+}
+b
+{
+    text-decoration: 2px red solid underline;
+}
+
+.im
+{
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    height: 250px !important;
+    width: 100%;
+    border-top: 5px solid var(--red);
+    border-bottom: 5px solid var(--red);
+    background-color: rgba(255, 255, 255, 0.194);
+    box-shadow: inset 0px 0px 4px 1px white,0px 0px 4px 4px white;
+}
+.img{
+    max-width: 105%;
+    max-height: 105%;
+    object-fit: contain;
+    transition: 0.3s;
+    -webkit-box-reflect: below -40% linear-gradient(to bottom, rgb(0, 128, 0,0.0),rgb(0, 128, 0,0.15), rgba(255, 255, 255, 0.2));
+}
+.img:hover{
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+.cut{
+    text-decoration:2px solid red line-through;
+}
+.delete{
+    border:2px solid var(--primary);
+    -webkit-box-reflect: below -10px linear-gradient(to bottom, rgb(0, 128, 0,0.0), rgb(0, 128, 0,0.4));
+}
+.delete:hover{
+    background-color: #580000;
+    color: white;
+}
+.update{
+    background-color: green;
+    color: white !important;
+    border:2px solid var(--primary);
+    -webkit-box-reflect: below -10px linear-gradient(to bottom, rgb(0, 128, 0,0.0), rgb(0, 128, 0,0.4));
+}
+.update:hover{
+    background-color: rgb(0, 62, 0);
+    border:2px solid rgb(36, 181, 0);
+    color: white !important;
+}
+
+@media(max-width:450px) {
+    body{
+        display: grid;
+        height: 100%;
+        width: 100%;
+        place-items: center;
+    }
+    .card1
+{
+width: 80%;
+margin: 4% auto;
+}
+}
+
+@media(max-width:600px) {
+    body{
+        display: grid;
+        height: 100%;
+        width: 100%;
+        place-items: center;
+    }
+    .card1
+{
+width: 70%;
+display: inline-block;
+}
+}
+
+@media(max-width:991px) {
+    body{
+        display: grid;
+        height: 100%;
+        width: 100%;
+        place-items: center;
+    }
+    .card1
+{
+width: 80%;
+display: inline-block;
+}
+}
+.vf{
+    background: url("https://cdn.wallpapersafari.com/38/57/JwpbFs.jpg") !important;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat !important;
+    object-fit: contain;
+}
+
+.card-text1{
+    font-size: 100% !important;
+}
+.update,.delete{
+    font-size: 100% !important;
+}
+.card-title1{
+    font-size: 100% !important;
+}
+
+@media(max-width:1075px){
+    .card-text1{
+        font-size: 78% !important;
+    } 
+    .update,.delete{
+        font-size: 74% !important;
+    }
+    .card-title1{
+        font-size: 78% !important;
+    }
+}
+@media(max-width:991px){
+    .card-text1{
+        font-size: 100% !important;
+    } 
+    .update,.delete{
+        font-size: 100% !important;
+    }
+    .card-title1{
+        font-size: 100% !important;
+    }
+}
+
+@media(max-width:420px){
+    .card-text1{
+        font-size: 70% !important;
+    } 
+    .update,.delete{
+        font-size: 60% !important;
+    }
+    .card-title1{
+        font-size: 70% !important;
+    }
+}
